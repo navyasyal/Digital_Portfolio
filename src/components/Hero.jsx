@@ -70,7 +70,6 @@ export default function Hero() {
           </div>
 
           <div style={{ marginTop: 14, color: "var(--muted)", lineHeight: 1.6 }}>
-            <b style={{ color: "var(--text)" }}>Tip:</b> Add a small SOC lab project later (Wazuh/ELK/Splunk + investigation notes).
           </div>
         </Card>
       </div>
