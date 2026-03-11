@@ -1,5 +1,4 @@
 import Section from "./Section.jsx";
-import Card from "./Card.jsx";
 import Badge from "./Badge.jsx";
 import { skills } from "../data/portfolio.js";
 
@@ -8,17 +7,23 @@ export default function Skills() {
     <Section
       id="skills"
       title="Skills"
+      compact={true}
     >
-      <div className="grid two">
+      <div style={{ display: "grid", gap: 22 }}>
         {skills.map((s) => (
-          <Card key={s.group}>
-            <div style={{ fontWeight: 850, marginBottom: 8 }}>{s.group}</div>
-            <div style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
+          <div key={s.group}>
+            <div style={{ fontWeight: 850, marginBottom: 10, fontSize: 18 }}>
+              {s.group}
+            </div>
+
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
               {s.items.map((it) => (
-                <Badge key={it} tone="info">{it}</Badge>
+                <Badge key={it} tone="info">
+                  {it}
+                </Badge>
               ))}
             </div>
-          </Card>
+          </div>
         ))}
       </div>
     </Section>

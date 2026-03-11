@@ -41,7 +41,6 @@ export default function Hero() {
             <div>
               <div style={{ fontWeight: 850, fontSize: 16 }}>Recruiter snapshot</div>
               <div style={{ color: "var(--muted)", fontSize: 13, marginTop: 4 }}>
-                A quick overview (SOC-friendly)
               </div>
             </div>
             <Badge tone="accent">Open to internship</Badge>

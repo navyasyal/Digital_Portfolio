@@ -1,5 +1,4 @@
 import Section from "./Section.jsx";
-import Card from "./Card.jsx";
 import { positions } from "../data/portfolio.js";
 
 export default function Positions() {
@@ -7,18 +6,23 @@ export default function Positions() {
     <Section
       id="positions"
       title="Positions of Responsibility"
-      subtitle="Leadership and organizational roles during my university years."
+      compact={true}
     >
-      <Card>
-        <ul style={{ margin: 0, paddingLeft: 20, lineHeight: 1.8 }}>
-          {positions.map((p, index) => (
-            <li key={index} style={{ marginBottom: 10 }}>
-              <strong>{p.role}</strong>, {p.org}
-              {p.desc && <span> – {p.desc}</span>}
-            </li>
-          ))}
-        </ul>
-      </Card>
+      <ul
+        style={{
+          margin: "10px 0 0",
+          paddingLeft: 22,
+          lineHeight: 1.8,
+          color: "var(--text)"
+        }}
+      >
+        {positions.map((p, index) => (
+          <li key={index} style={{ marginBottom: 10 }}>
+            <strong>{p.role}</strong>, {p.org}
+            {p.desc && <span> – {p.desc}</span>}
+          </li>
+        ))}
+      </ul>
     </Section>
   );
 }
