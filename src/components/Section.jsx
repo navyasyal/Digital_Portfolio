@@ -1,6 +1,6 @@
 export default function Section({ id, title, subtitle, children }) {
   return (
-    <section id={id} className="container" style={{ padding: "64px 0 12px" }}>
+    <section id={id} className="container" style={{ padding: "40px 0 10px" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 12 }}>
         <div>
           <h2 style={{ margin: 0, fontSize: 28, letterSpacing: 0.2 }}>{title}</h2>
