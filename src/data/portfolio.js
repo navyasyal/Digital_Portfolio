@@ -38,6 +38,18 @@ export const skills = [
   }
 ];
 
+export const positions = [
+  {
+    role: "President",
+    org: "Agraga – The Management Society of NIIT University"
+  },
+  {
+    role: "Member",
+    org: "Student Affairs Committee (SAC)",
+    desc: "Event Coordination and Student Welfare"
+  }
+];
+
 export const projects = [
   {
     name: "Zero Trust Architecture with Hybrid Cloud (Ongoing)",
