@@ -7,6 +7,8 @@ export default function Skills() {
     <Section
       id="skills"
       title="Skills"
+
+
       compact={true}
     >
       <div style={{ display: "grid", gap: 22 }}>

@@ -2,7 +2,7 @@ export const profile = {
   name: "Navya Syal",
   title: "Cybersecurity Student | SOC Internship",
   tagline:
-    "I’m learning SOC basics and building projects in security, monitoring, and forensics. I like working with Linux, logs, and security-first apps.",
+   "I am currently learning SOC fundamentals and developing knowledge in security monitoring and digital forensics.",
   location: "Delhi, India",
   email: "navyaasyall@gmail.com",
   phone: "+91 9999511678",
@@ -14,15 +14,16 @@ export const profile = {
 };
 
 export const highlights = [
-  { k: "Looking for", v: "Cyber Security/SOC Internship" },
-  { k: "Good at", v: "Learning fast + explaining clearly" },
-  { k: "Tools", v: "Linux • Git/GitHub • Jenkins • MERN" }
+  { k: "Career Goal", v: "Aspiring Cybersecurity/SOC Analyst" },
+  { k: "Core Strengths", v: "Problem Solving • Quick Learner • Team Collaboration" },
+  { k: "Technologies", v: "Linux • Git/GitHub • Jenkins • Wireshark • Nmap • ELK Stack • MongoDB • React • Node.js" },
+  { k: "Interests", v: "Threat Detection • Security Monitoring • Log Ananlysis" }
 ];
 
 export const skills = [
   {
     group: "SOC Basics",
-    items: ["Log basics", "Alert triage (learning)", "Incident response flow (learning)", "MITRE ATT&CK (learning)"]
+    items: ["Cloud Security","Log basics", "Alert triage (learning)", "Incident response flow (learning)", "MITRE ATT&CK (learning)"]
   },
   {
     group: "Security",
@@ -152,5 +153,40 @@ export const projects = [
     tech: ["Algorithms", "A*"],
     links: { repo: "" },
     tag: "Academic"
+  }
+];
+
+export const certifications = [
+  {
+    name: "Cybersecurity Analyst Job Simulation",
+    org: "Tata Consultancy Services (Forage)",
+    year: "2024",
+    link: "/certificates/tata-cybersecurity.pdf",
+    details: [
+      "Worked on Identity and Access Management (IAM)",
+      "Learned IAM strategy and security best practices",
+      "Created documentation and security recommendations"
+    ]
+  },
+  {
+    name: "Cybersecurity Job Simulation",
+    org: "Mastercard (Forage)",
+    year: "2024",
+    link: "/certificates/mastercard-cybersecurity.pdf",
+    details: [
+      "Worked as an analyst in Mastercard's Security Awareness team",
+      "Identified phishing threats",
+      "Improved security training procedures"
+    ]
+  },
+  {
+    name: "Introduction to Cybersecurity",
+    org: "IBM SkillsBuild",
+    year: "2026",
+    link: "/certificates/ibm-cybersecurity.pdf",
+    details: [
+      "Learned cybersecurity fundamentals",
+      "Understood common cyber threats and defenses"
+    ]
   }
 ];
