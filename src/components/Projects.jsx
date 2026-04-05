@@ -8,12 +8,28 @@ function LinkRow({ links }) {
   if (!entries.length) return null;
 
   return (
-    <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 8 }}>
-      {entries.map(([k, v]) => (
-        <a key={k} className="btn ghost" href={v} target="_blank" rel="noreferrer">
-          {k.toUpperCase()}
-        </a>
-      ))}
+    <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 10 }}>
+      {entries.map(([k, v]) => {
+        let label = k;
+
+        // 🔥 Clean naming for buttons
+        if (k === "github") label = "GitHub";
+        else if (k === "demo") label = "Live";
+        else if (k === "report") label = "Report"; // ✅ added
+        else if (k === "docs") label = "Docs";
+
+        return (
+          <a
+            key={k}
+            className="btn ghost"
+            href={v}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {label}
+          </a>
+        );
+      })}
     </div>
   );
 }
@@ -22,11 +38,11 @@ export default function Projects() {
   return (
     <Section
       id="projects"
-      title="Projects"
-      subtitle="Some of the projects I have worked on during my studies and research."
+      title="Academic Projects"
+      subtitle="Some of the projects I have worked on during my Academic Coursework."
       compact={true}
     >
-      <div style={{ display: "grid", gap: 28 }}>
+      <div style={{ display: "grid", gap: 24 }}>
         {projects.map((p) => (
           <div key={p.name}>
 
@@ -45,12 +61,12 @@ export default function Projects() {
             </div>
 
             {/* description */}
-            <p style={{ color: "var(--muted)", marginTop: 8, lineHeight: 1.6 }}>
+            <p style={{ color: "var(--muted)", marginTop: 6, lineHeight: 1.6 }}>
               {p.impact}
             </p>
 
             {/* bullets */}
-            <ul style={{ paddingLeft: 18, color: "var(--muted)", lineHeight: 1.7 }}>
+            <ul style={{ paddingLeft: 18, marginTop: 6, color: "var(--muted)", lineHeight: 1.7 }}>
               {p.bullets?.map((b) => (
                 <li key={b}>{b}</li>
               ))}
@@ -65,6 +81,7 @@ export default function Projects() {
               ))}
             </div>
 
+            {/* 🔥 links (GitHub / Report / etc.) */}
             <LinkRow links={p.links} />
 
           </div>

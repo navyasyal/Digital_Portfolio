@@ -16,7 +16,7 @@ export const profile = {
 export const highlights = [
   { k: "Career Goal", v: "Aspiring Cybersecurity/SOC Analyst" },
   { k: "Core Strengths", v: "Problem Solving • Quick Learner • Team Collaboration" },
-  { k: "Technologies", v: "Linux • Git/GitHub • Jenkins • Wireshark • Nmap • ELK Stack • MongoDB • React • Node.js" },
+  { k: "Technologies", v: "Splunk • Git/GitHub • Jenkins • Wireshark • Nmap • Wazuh • React • Node.js" },
   { k: "Interests", v: "Threat Detection • Security Monitoring • Log Ananlysis" }
 ];
 
@@ -65,7 +65,7 @@ export const projects = [
       "Kept the project ready for CI/CD style deployment"
     ],
     tech: ["MERN Stack", "Authentication", "RBAC", "Jenkins", "Git/GitHub"],
-    links: { repo: "", demo: "" },
+    links: { "Github Repository": "https://github.com/navyasyal/zero_trust_architecture", demo: "" },
     tag: "Capstone"
   },
   {
@@ -98,20 +98,7 @@ export const projects = [
       "Generated recommendation outputs"
     ],
     tech: ["SQL", "MySQL", "Backend"],
-    links: { repo: "" },
-    tag: "Academic"
-  },
-  
-  {
-    name: "Multivariate Optimization (Lagrange Multipliers)",
-    category: "Algorithms / Mathematics",
-    featured: false,
-    role: "Math + coding",
-    impact:
-      "Solved constrained optimization problems using Lagrange multipliers and SciPy.",
-    bullets: ["Built constraint equations", "Solved using SciPy", "Checked outputs and constraints"],
-    tech: ["Python", "SciPy"],
-    links: { repo: "" },
+    links: { repo: "" , report: "https://drive.google.com/file/d/1zEwQ-ksQRvBBJBRcDQruOuGbh0cZKzRv/view?usp=sharing" },
     tag: "Academic"
   },
   {
@@ -123,7 +110,7 @@ export const projects = [
       "Studied AES security using Shannon theory concepts and basic quantum search idea (Grover).",
     bullets: ["Compared AES variants", "Reviewed entropy/redundancy concepts", "Wrote findings clearly"],
     tech: ["Cryptography", "Security Theory"],
-    links: { paper: "", repo: "" },
+    links: { "Research Report": "https://drive.google.com/file/d/18oLKiYGJKduFdpdd4FBYIxML4H4M42Ux/view?usp=sharing", repo: "" },
     tag: "Research"
   },
   {
@@ -132,14 +119,14 @@ export const projects = [
     featured: false,
     role: "Research Study",
     impact:
-      "Worked on a framework idea that combines detection methods and response steps.",
+      "Researched on a framework idea that combines detection methods and response steps.",
     bullets: [
       "Studied signature vs anomaly detection",
       "Outlined response workflow",
       "Added severity/priority idea"
     ],
     tech: ["Threat Detection", "Security Architecture"],
-    links: { paper: "", repo: "" },
+    links: { "Research Paper": "https://drive.google.com/file/d/1-Z1-Fykfle-07-NZvyJmThlMiSDMjY6X/view?usp=sharing", repo: "" },
     tag: "Research"
   },
   {
@@ -151,7 +138,7 @@ export const projects = [
       "Compared search algorithms like BFS, DFS and A* on maze problems.",
     bullets: ["Implemented A* with heuristic", "Compared efficiency", "Noted best results"],
     tech: ["Algorithms", "A*"],
-    links: { repo: "" },
+    links: { repo: "", "Presentation": "https://drive.google.com/file/d/1lg4c7FH_ZwTveKvM_RB78k9PIR7Wzqqn/view?usp=sharing" },
     tag: "Academic"
   }
 ];
@@ -188,35 +175,19 @@ export const certifications = [
       "Learned cybersecurity fundamentals",
       "Understood common cyber threats and defenses"
     ]
-  }
-];
-
-export const experience = [
+  },
   {
-    title: "TryHackMe SOC Simulation",
-    points: [
+    name: "SOC Simulation",
+    org: "TryHackMe",
+    year: "2026",
+    link: "https://tryhackme.com/soc-sim/public-summary/6995f10149d49142cbfab7960fd6f9b9e9dda7728ac61b167c535cfdea957962f79755da6a084293323db7cfbfe2cdc0",
+    details: [
       "Completed SOC simulation involving real-world alert triage and investigation",
       "Analyzed security alerts and identified true vs false positives",
       "Worked with SIEM tools to investigate logs and suspicious activity",
       "Documented findings through structured case reports"
     ]
   },
-  {
-    title: "Small SOC Practice Projects",
-    points: [
-      "Practiced identifying suspicious patterns in logs",
-      "Worked on basic alert analysis and investigation",
-      "Focused on understanding SOC workflows"
-    ]
-  },
-  {
-    title: "Tools (Learning)",
-    points: [
-      "Learning Splunk for log analysis and monitoring",
-      "Understanding SIEM concepts and workflows",
-      "Exploring how logs are collected and correlated"
-    ]
-  }
 ];
 
 export const selfProjects = [
