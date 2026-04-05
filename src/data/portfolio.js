@@ -190,3 +190,73 @@ export const certifications = [
     ]
   }
 ];
+
+export const experience = [
+  {
+    title: "TryHackMe SOC Simulation",
+    points: [
+      "Completed SOC simulation involving real-world alert triage and investigation",
+      "Analyzed security alerts and identified true vs false positives",
+      "Worked with SIEM tools to investigate logs and suspicious activity",
+      "Documented findings through structured case reports"
+    ]
+  },
+  {
+    title: "Small SOC Practice Projects",
+    points: [
+      "Practiced identifying suspicious patterns in logs",
+      "Worked on basic alert analysis and investigation",
+      "Focused on understanding SOC workflows"
+    ]
+  },
+  {
+    title: "Tools (Learning)",
+    points: [
+      "Learning Splunk for log analysis and monitoring",
+      "Understanding SIEM concepts and workflows",
+      "Exploring how logs are collected and correlated"
+    ]
+  }
+];
+
+export const selfProjects = [
+  {
+    title: "Linux Log Analysis & Brute Force Detection",
+    link: "https://github.com/navyasyal/linux-log-analysis",
+    points: [
+      "Simulated a brute force attack using failed SSH login attempts",
+      "Analyzed logs using journalctl to detect authentication failures",
+      "Identified attacker IP and analyzed login patterns",
+    ],
+    tech: ["Linux", "Log Analysis", "SSH", "Journalctl"]
+  },
+
+  {
+    title: "SIEM-Based SOC Lab using Wazuh",
+    link: "https://github.com/navyasyal/wazuh-siem-soc-project",
+    points: [
+      "Built a SIEM-based SOC lab using Wazuh with multi-VM setup",
+      "Generated and analyzed security logs",
+      "Simulated brute-force attacks and detected login failures",
+      "Performed privilege escalation testing and analyzed alerts",
+      "Monitored real-time log ingestion and correlation",
+      "Configured syslog and auth.log collection",
+      "Identified attack patterns through analysis"
+    ],
+    tech: ["Wazuh", "SIEM", "Linux", "SOC Monitoring"]
+  },
+
+  {
+    title: "Splunk Log Analysis & Security Monitoring",
+    link: "https://github.com/navyasyal/Splunk_Log_Analysis",
+    points: [
+      "Built a SIEM dashboard using Splunk to analyze Windows Event Logs",
+      "Created SPL queries to detect failed logins and suspicious activity",
+      "Identified brute-force attack patterns from login behavior",
+      "Monitored privileged account activity and unusual access",
+      "Designed dashboards to visualize security trends",
+      "Optimized SPL queries for better performance"
+    ],
+    tech: ["Splunk", "SIEM", "Windows Logs", "SPL"]
+  }
+];
