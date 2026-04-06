@@ -188,6 +188,16 @@ export const certifications = [
       "Documented findings through structured case reports"
     ]
   },
+  {
+  name: "Endpoint Security",
+  org: "Cisco Networking Academy",
+  year: "2026",
+  link: "/certificates/cisco-endpoint.pdf",
+  details: [
+    "Learned endpoint protection and security fundamentals",
+    "Covered malware, attacks, and system protection techniques"
+  ]
+}
 ];
 
 export const selfProjects = [
