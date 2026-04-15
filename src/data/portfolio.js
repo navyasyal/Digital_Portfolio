@@ -197,6 +197,16 @@ export const certifications = [
     "Learned endpoint protection and security fundamentals",
     "Covered malware, attacks, and system protection techniques"
   ]
+},
+{
+  name: "CyberSecurity Threat Management",
+  org: "Cisco Networking Academy",
+  year: "2026",
+  link: "/certificates/cisco-threat-management.pdf",
+  details: [
+    "Learned threat detection, attack vectors, and incident response basics",
+    "Built foundation in SOC operations and cybersecurity risk management"
+  ]
 }
 ];
 
