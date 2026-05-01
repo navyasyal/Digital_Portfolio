@@ -53,7 +53,7 @@ export const positions = [
 
 export const projects = [
   {
-    name: "Zero Trust Architecture with Hybrid Cloud (Ongoing)",
+    name: "Zero Trust Architecture with Hybrid Cloud",
     category: "Security Architecture",
     featured: true,
     role: "Full-stack + security work",
@@ -65,11 +65,11 @@ export const projects = [
       "Kept the project ready for CI/CD style deployment"
     ],
     tech: ["MERN Stack", "Authentication", "RBAC", "Jenkins", "Git/GitHub"],
-    links: { "Github Repository": "https://github.com/navyasyal/zero_trust_architecture", demo: "" },
+    links: { "Github Repository": "https://github.com/navyasyal/zerotrust", demo: "" },
     tag: "Capstone"
   },
   {
-    name: "FORENSIC-AI: Deepfake Video Detection for Digital Evidence (Ongoing)",
+    name: "FORENSIC-AI: Deepfake Video Detection for Digital Evidence",
     category: "Cybersecurity Research",
     featured: true,
     role: "R&D project",
@@ -249,5 +249,18 @@ export const selfProjects = [
       "Optimized SPL queries for better performance"
     ],
     tech: ["Splunk", "SIEM", "Windows Logs", "SPL"]
+  },
+
+    {
+    title: "Threat Detection using Kali Linux",
+    link: "https://github.com/navyasyal/kali-threat-detection",
+    points: [
+      "Simulated real-world cyber attack techniques and mapped them to MITRE ATT&CK",
+      "Detected SSH brute force attacks by analyzing authentication logs using journalctl",
+      "Monitored and analyzed command execution activity using auditd logs",
+      "Identified persistence mechanisms through cron job creation and monitoring",
+      "Detected access to sensitive files (e.g., /etc/shadow) indicating potential credential theft"
+    ],
+    tech: ["MITRE ATT&CK", "Linux Logs", "Journalctl", "auditd"]
   }
 ];
