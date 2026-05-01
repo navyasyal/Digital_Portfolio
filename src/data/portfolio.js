@@ -65,7 +65,7 @@ export const projects = [
       "Kept the project ready for CI/CD style deployment"
     ],
     tech: ["MERN Stack", "Authentication", "RBAC", "Jenkins", "Git/GitHub"],
-    links: { "Github Repository": "https://github.com/navyasyal/zerotrust", demo: "" },
+    links: { "Github Repository": "https://github.com/navyasyal/zerotrust/tree/feature/zero_trust_final", demo: "" },
     tag: "Capstone"
   },
   {
